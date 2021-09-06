@@ -1,0 +1,99 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body>* {
+    width: 100%;
+}
+
+header {
+    /* background-image: url("media/dragraceheader.png"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #7fd3d3;
+    max-height: 15em;
+    display: flex;
+    justify-content: center;
+}
+
+header > img {
+   max-height: 15em;
+}
+
+.pageNavigation {
+    overflow: hidden;
+    background-color: #e9f083;
+    color: #fb95f9;
+}
+
+.pageNavigation a {
+    float: left;
+    display: block;
+    color: #fb95f9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.pageNavigation a:hover {
+    background-color: #6e529d;
+    color: white;
+}
+
+.pageNavigation a.active {
+    background-color: #fb95f9;
+    color: white;
+}
+
+.pageNavigation .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .pageNavigation a:not(:first-child) {
+        display: none;
+    }
+
+    .pageNavigation a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pageNavigation.responsive {
+        position: relative;
+    }
+
+    .pageNavigation.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .pageNavigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+main {
+    background-color: #96fafa;
+    flex: 2;
+}
+
+footer {
+    background-color: #7fd3d3;
+    height: 5em;
+}
