@@ -8,14 +8,17 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #7fd3d3;
 }
 
 body > * {
-    width: 100%;
+    width: 60%;
+    margin: 0 20%;   
 }
 
+/* Header */
+
 header {
-    /* background-image: url("media/dragraceheader.png"); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -27,7 +30,10 @@ header {
 
 header > img {
     max-height: 15em;
+    max-width: 100%;
 }
+
+/* Nav */
 
 .pageNavigation {
     overflow: hidden;
@@ -59,6 +65,77 @@ header > img {
     display: none;
 }
 
+/* Content */
+
+.info-tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.info-tile {
+    width: 40%;
+    margin: 3em 0;
+
+ 
+}
+
+.tile-content {
+    background-color: white;
+        /* border-radius */
+ -webkit-border-radius: 10px 0;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+/* box-shadow */
+ -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.info-tile img {
+    max-width: 100%;
+}
+
+main {
+    background-color: #96fafa;
+    flex: 2;
+}
+
+.spoiler-warning {
+
+}
+
+.spoiler-content {
+    animation: blur 4s ease 0s infinite;
+    -webkit-animation: blur 4s ease 0s infinite;
+    -moz-animation: blur 4s ease 0s infinite;
+}
+
+.spoiler-content img {
+    width: 100%;
+}
+
+.spoiler-content.hidden * {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+}
+
+footer {
+    background-color: #4ff8f8;
+    height: 5em;
+}
+
+@media screen and (max-width: 900px) {
+    .info-tile {
+        width: 90%;
+        margin: 1em 5%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .pageNavigation a:not(:first-child) {
         display: none;
@@ -86,40 +163,4 @@ header > img {
         display: block;
         text-align: left;
     }
-}
-
-main {
-    background-color: #96fafa;
-    flex: 2;
-}
-
-.spoiler-warning {
-
-}
-
-.spoiler-content {
-    border: 1px solid black;
-    max-width: 50%;
-    animation: blur 4s ease 0s infinite;
-    -webkit-animation: blur 4s ease 0s infinite;
-    -moz-animation: blur 4s ease 0s infinite;
-}
-
-.spoiler-content img {
-    width: 100%;
-}
-
-.spoiler-content.hidden * {
-
-
-    -webkit-filter: blur(25px);
-    -moz-filter: blur(25px);
-    -o-filter: blur(25px);
-    -ms-filter: blur(25px);
-    filter: blur(25px);
-}
-
-footer {
-    background-color: #7fd3d3;
-    height: 5em;
 }
