@@ -10,7 +10,7 @@ body {
     flex-direction: column;
 }
 
-body>* {
+body > * {
     width: 100%;
 }
 
@@ -26,7 +26,7 @@ header {
 }
 
 header > img {
-   max-height: 15em;
+    max-height: 15em;
 }
 
 .pageNavigation {
@@ -91,6 +91,32 @@ header > img {
 main {
     background-color: #96fafa;
     flex: 2;
+}
+
+.spoiler-warning {
+
+}
+
+.spoiler-content {
+    border: 1px solid black;
+    max-width: 50%;
+    animation: blur 4s ease 0s infinite;
+    -webkit-animation: blur 4s ease 0s infinite;
+    -moz-animation: blur 4s ease 0s infinite;
+}
+
+.spoiler-content img {
+    width: 100%;
+}
+
+.spoiler-content.hidden * {
+
+
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
 }
 
 footer {

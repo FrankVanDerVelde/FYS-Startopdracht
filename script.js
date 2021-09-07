@@ -5,4 +5,14 @@ function switchNavClass() {
     } else {
         nav.className = "pageNavigation";
     }
-  }
+}
+
+window.onload = (event) => {
+    document.querySelectorAll('.spoiler-warning').forEach(spoilerWarningElement => {
+        spoilerWarningElement.addEventListener('click', () => {
+            spoilerWarningElement.parentElement.querySelectorAll('.spoiler-content').forEach(spoilerContent => {
+                spoilerContent.classList.remove('hidden');
+            })
+        });
+    })
+};
