@@ -1,40 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A page about drag</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="media/favicon-32x32.png" type="image/gif"
+        sizes="32x32" />
+    <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
     <header>
-        <img src="media/dragraceheader.png">
+        <img alt="Rupaul header image" src="media/dragraceheader.png" />
     </header>
-    <nav id="pageNavigation" class="pageNavigation">
-        <a href="index.html">Home</a>
-        <a href="history.html">Herstory</a>
-        <a href="my-favorites.html" class="active">My Favorites</a>
-        <a href="#" class="icon" onclick="switchNavClass()">
-            X
-        </a>
-    </nav>
-    
-    <main>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim at turpis vel aliquet. Quisque varius leo scelerisque arcu rutrum, sit amet tristique quam interdum. In auctor quam ac ante finibus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus eget augue orci. Fusce lobortis eget sapien maximus imperdiet. Duis arcu nibh, elementum ac tellus ut, dapibus ultricies mi. Quisque in dui in ipsum aliquam sodales. Maecenas finibus varius justo, sit amet vestibulum felis sollicitudin et. Sed egestas gravida mi ut molestie. Pellentesque sollicitudin mauris ex, dapibus posuere mi cursus vel. Fusce mi sapien, interdum nec aliquam a, pulvinar ac velit. Sed tincidunt cursus velit, quis egestas lectus iaculis in.
+        <div class="shadow-wrapper">
+            <nav id="page-navigation" class="page-navigation">
+                <a href="index.html">Home</a>
+                <a href="history.html">Herstory</a>
+                <a href="my-favorites.html" class="active">My Favorites</a>
+                <a href="#" class="icon" onclick="switchNavClass()">
+                <i class="fas fa-bars"></i>
+            </a>
+            </nav>
 
-Donec lobortis id ante ac tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sem felis, pellentesque eu leo consectetur, sagittis vulputate odio. Suspendisse hendrerit sem ac leo lacinia elementum. Donec finibus suscipit tortor, in pharetra metus semper laoreet. Mauris vel nisi et nibh accumsan rutrum sit amet vitae nisl. Fusce sodales vestibulum massa eget laoreet. Pellentesque accumsan elit ac lobortis ultricies. Duis rutrum, felis a bibendum luctus, neque erat aliquam ante, at placerat augue massa eget ante. Morbi vel feugiat orci, quis vestibulum tortor. Quisque venenatis efficitur tortor.
+            <main>
+                <h1>Some of my favorite queens</h1>
+                <div class="favorites-container">
+                    <div class="favorite">
+                        <img src="media/katya-zamo.jpg" alt="Katya Zamolodchikova">
+                        <span class="drag-name">Katya Zamolodchikova</span>
+                        <span class="seasons">Season: 7 & All stars 2</span>
+                        <p class="about">Brian Joseph McCook, known by his drag
+                            persona Yekaterina Petrovna Zamolodchikova, or
+                            mononymously as Katya, is an American drag queen,
+                            actor, author, recording artist, and
+                            comedian.</p>
+                    </div>
 
-Fusce iaculis, tortor ac tempus volutpat, sem mauris laoreet quam, eget scelerisque odio odio eu ligula. Proin feugiat, orci eget scelerisque bibendum, sapien ex faucibus turpis, quis malesuada purus mi ac lectus. Cras suscipit elit vehicula magna porttitor condimentum. Vestibulum non felis viverra, sodales nisl id, lobortis lectus. Mauris in vulputate nisi. Suspendisse nec volutpat nulla. Pellentesque hendrerit fringilla tincidunt. Nunc vestibulum augue id scelerisque mollis. Vivamus rutrum urna vitae leo accumsan, in aliquam turpis cursus. Mauris ac erat sapien. Maecenas fermentum fermentum imperdiet. Proin quis tincidunt tellus. Cras hendrerit ipsum vel sapien condimentum consequat. Donec id sapien augue. Mauris sed purus magna.
+                    <div class="favorite">
+                        <img src="media/bob-the-dragqueen.jpg" alt="Bob the Drag Queen">
+                        <span class="drag-name">Bob the Drag Queen
+                        </span>
+                        <span class="seasons">Season 8 Winner</span>
+                        <p class="about">Caldwell Tidicue, also known as Bob the
+                            Drag Queen, is an American drag queen, comedian,
+                            activist, musician, songwriter, and reality
+                            television personality best known for winning the
+                            eighth season of RuPaul's Drag Race.</p>
+                    </div>
 
-Sed sit amet quam varius, efficitur dui et, commodo tortor. Sed in posuere tellus. Aenean dictum elit aliquet felis vulputate viverra. Fusce dui felis, egestas ac porta non, pellentesque quis neque. Duis sed venenatis odio. Nulla nec nibh volutpat, viverra nibh non, tincidunt massa. Nam nisl urna, sodales ac lorem quis, aliquam pharetra dui. In hac habitasse platea dictumst. Nam tempus diam ac nulla dignissim pellentesque. Nulla in rhoncus dui, aliquet mollis augue. Cras sed posuere mi, at molestie ante. Duis ligula enim, tempor laoreet dictum id, rhoncus at nisi. In sodales justo vitae enim facilisis, sit amet laoreet dui bibendum. Etiam convallis porta purus. Vivamus ac purus hendrerit, consectetur lacus at, mollis sapien.
+                    <div class="favorite">
+                        <img src="media/trixie-mattel.jpg" alt="Trixie Mattel">
+                        <span class="drag-name">Trixie Mattel</span>
+                        <span class="seasons">Season 7 & All stars 3 winner</span>
+                        <p class="about">Brian Michael Firkus, best known by her
+                            stage name Trixie Mattel, is an American drag queen,
+                            reality television personality, singer, songwriter,
+                            comedian and entrepreneur from Milwaukee, Wisconsin.
+                        </p>
+                    </div>
 
-Duis laoreet rhoncus aliquet. Aenean semper dolor vel ex varius, at aliquet mauris consectetur. Cras rutrum odio id tincidunt pulvinar. Phasellus at viverra est. Nunc ut pharetra eros. Integer tempor vestibulum magna sed ultrices. Morbi rutrum ornare nisi eget pharetra.
-    </main>
-    <footer>
-        footer
-    </footer>
-    <!-- Load javascript after css and html have been loaded --> 
-    <script src="script.js"></script>
+                    <div class="favorite">
+                        <img src="media/naomi-smalls.jpg" alt="Naomi Smalls">
+                        <span class="drag-name">Naomi Smalls</span>
+                        <span class="seasons">Season 8 & all stars 4</span>
+                        <p class="about">Davis Heppenstall, better known by the
+                            stage name Naomi Smalls, is an American drag queen
+                            and reality television personality, best known as
+                            one of the runners-up on the eighth season of
+                            RuPaul's Drag Race as well as RuPaul's Drag Race All
+                            Stars season 4.</p>
+                    </div>
+
+                    <div class="favorite">
+                        <img src="media/tayce.jpg" alt="Tayce">
+                        <span class="drag-name">Tayce</span>
+                        <span class="seasons">UK season 2</span>
+                        <p class="about">Tayce Szura-Radix is a Welsh drag queen
+                            and model from Newport, Wales. She is best known for
+                            competing on the second series of RuPaul's Drag Race
+                            UK, where she was placed as a runner-up on the
+                            series.</p>
+                    </div>
+
+                    <div class="favorite">
+                        <img src="media/envy-peru.jpg" alt="Envy Peru">
+                        <span class="drag-name">Envy Peru</span>
+                        <span class="seasons">Holland season 1</span>
+                        <p class="about">Boris Itzkovich Escobar, known by the
+                            stage name Envy Peru, is a Peruvian drag queen,
+                            actor, model and makeup artist settled in the
+                            Netherlands, most notable for being the winner of
+                            the first season of Drag Race Holland.</p>
+                    </div>
+
+                    <div class="favorite">
+                        <img src="media/max.jpg" alt="Max">
+                        <span class="drag-name">Max</span>
+                        <span class="seasons">Season 7</span>
+                        <p class="about">Max Malanaphy, known simply as Max, is
+                            a drag performer best known for being a contestant
+                            on Season 7 of RuPaul's Drag Race, coming in at 8th
+                            originally, but then moved to 9th due to Trixie
+                            Mattel re-entering the competition.</p>
+                    </div>
+
+                    <div class="favorite">
+                        <img src="media/courtney-act.jpg" alt="Courtney Act">
+                        <span class="drag-name">Courtney Act</span>
+                        <span class="seasons">Season 6</span>
+                        <p class="about">Shane Gilberto Jenek, better known
+                            under the stage name Courtney Act, is an Australian
+                            drag queen, singer and television personality.
+                            Courtney first came to prominence competing on the
+                            first season of Australian Idol in 2003. </p>
+                    </div>
+
+                    <div class="favorite">
+                        <img src="media/leganja-estranja.jpg" alt="Leganja Estranja">
+                        <span class="drag-name">Leganja Estranja</span>
+                        <span class="seasons">Season 6</span>
+                        <p class="about">Laganja Estranja is an American drag
+                            queen, choreographer and cannabis activist. She was
+                            best known as a contestant on Season 6 of RuPaul's
+                            Drag Race and placing 8th.
+
+                            She later returned on All Stars 6 as a Lip-Sync
+                            Assassin and won the lip-sync against her Season 6
+                            sister, Trinity K. Bonet.</p>
+                    </div>
+
+                    <div class="favorite">
+                        <img src="media/cheryl-hole.jpg" alt="Cheryl Hole">
+                        <span class="drag-name">Cheryl Hole</span>
+                        <span class="seasons">UK season 1</span>
+                        <p class="about">Cheryl Hole is the stage name of Luke
+                            Underwood, an English drag queen who is known for
+                            being one of the first contestants on RuPaul's Drag
+                            Race UK. Cheryl's act is based on former Girls Aloud
+                            singer Cheryl Cole.</p>
+                    </div>
+
+                    <div class="favorite">
+                        <img src="media/kylie.jpg" alt="Kylie Sonique Love">
+                        <span class="drag-name">Kylie Sonique Love</span>
+                        <span class="seasons">Season 2 & All stars 6</span>
+                        <p class="about">Kylie Sonique Love, formerly known as
+                            Sonique, is an American drag queen, singer, dancer,
+                            and reality television personality. She rose to
+                            prominence as a contestant on the second season of
+                            RuPaul's Drag Race in 2010, and achieved further
+                            popularity by winning the sixth season of RuPaul's
+                            Drag Race All Stars in 2021.</p>
+                    </div>
+
+                    <div class="favorite">
+                        <img src="media/bimini-bon-boulash.jpg" alt="Bimini Bon-Boulash">
+                        <span class="drag-name">Bimini Bon-Boulash</span>
+                        <span class="seasons">UK season 2</span>
+                        <p class="about">Bimini Bon-Boulash is the stage name of
+                            Thomas Hibbitts, a British drag queen and model
+                            based in East London, and born in Great Yarmouth,
+                            England. They are best known for competing on the
+                            second series of RuPaul's Drag Race UK, where they
+                            placed as a runner-up.</p>
+                    </div>
+
+                    <div class="favorite">
+                        <img src="media/bianca.jpg" alt="Bianca Del Rio">
+                        <span class="drag-name">Bianca Del Rio</span>
+                        <span class="seasons">Season 6 winner</span>
+                        <p class="about">Roy Haylock, better known by the stage
+                            name Bianca Del Rio, is an American drag queen,
+                            comedian, actor, and costume designer best known for
+                            winning the sixth season of RuPaul's Drag Race.</p>
+                    </div>
+
+                    <!-- <div class="favorite">
+                        <img src="media/asia.png" alt="Asia O'Hara">
+                        <span class="drag-name">Asia O'Hara</span>
+                        <span>Season 10</span>
+                        <p class="about"></p>
+                    </div> -->
+
+                    <div class="favorite">
+                        <img src="media/a'whora.jpg" alt="A'Whora">
+                        <span class="drag-name">A'Whora</span>
+                        <span class="seasons">UK season 2</span>
+                        <p class="about">George Boyle, better known by the stage
+                            name A'Whora, is a British drag queen from Worksop,
+                            England. They are best known for competing on the
+                            second series of RuPaul's Drag Race UK.</p>
+                    </div>
+
+                    <div class="favorite">
+                        <img src="media/priyanka.jpg" alt="Priyanka">
+                        <span class="drag-name">Priyanka</span>
+                        <span class="seasons">Canada season 1</span>
+                        <p class="about">Mark Suknanan is a Canadian television
+                            personality and drag queen. Competing under his drag
+                            name, Priyanka, Suknanan won the first season of the
+                            reality competition series Canada's Drag Race in
+                            2020.</p>
+                    </div>
+
+                </div>
+            </main>
+            <footer>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">Herstory</a></li>
+                    <li><a href="my-favorites.html" class="active">My Favorites</a>
+                    </li>
+                </ul>
+                <div class="made-by-container">
+                    <span>Made by Frank van der Velde</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="https://github.com/FrankVanDerVelde/FYS-Startopdracht">Github Repo</a>
+                    </li>
+                    <li><a href="https://www.instagram.com/jostifrank/">Instagram</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <!-- Load javascript after css and html have been loaded -->
+        <script src="script.js"></script>
 </body>
+
 </html>

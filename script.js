@@ -1,9 +1,9 @@
 function switchNavClass() {
-    var nav = document.getElementById("pageNavigation");
-    if (nav.className === "pageNavigation") {
+    var nav = document.getElementById("page-navigation");
+    if (nav.className === "page-navigation") {
         nav.className += " responsive";
     } else {
-        nav.className = "pageNavigation";
+        nav.className = "page-navigation";
     }
 }
 
