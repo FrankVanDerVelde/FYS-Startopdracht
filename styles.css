@@ -99,6 +99,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 0.5em 3em;
+  color: #6e529d;
 }
 
 .made-by-container {
@@ -126,6 +127,18 @@ footer ul a {
 
 footer ul a.active {
   font-weight: 700;
+}
+
+footer ul a:link {
+  color: #6e529d;
+}
+
+footer ul a:visited {
+  color: #6e529d;
+}
+
+footer ul a:hover {
+  color: #6e529d;
 }
 
 /* Home */
